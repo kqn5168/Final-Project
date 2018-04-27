@@ -1,0 +1,12 @@
+## Clone repo https://github.com/Matt-Wash-Burn/BlueTeam.git
+
+
+## Navigate to GettingStarted folder and
+## Install required linux files
+sudo apt-get install $(cat req1.txt)
+
+
+## Run the following in terminal 
+sudo pip install -r req2.txt
+
+
