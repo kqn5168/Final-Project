@@ -1,4 +1,5 @@
 
+import os
 import tensorflow as tf
 import zipfile
 import cv2
@@ -14,6 +15,10 @@ from scipy.misc import toimage
 
 # Getting the path where the original images are located
 TEST_IMAGE_PATHS = glob.glob("./object_detection/*.jpg")
+
+newpath = './wavelet/' 
+if not os.path.exists(newpath):
+    os.makedirs(newpath)
 
 
 count = 0;
@@ -34,7 +39,7 @@ for image_path in TEST_IMAGE_PATHS:
 	(cA, (cH, cV, cD)) = pywt.wavedec2(gray_image, 'haar', level=1)
 
 	#saveing the LL image as a png to a new folder
-	name = './demo/' + str(count) + '.png'
+	name = './wavelet/' + str(count) + '.png'
 	print ('Creating...' + name);
 	cv2.imwrite(name, cA)
 
