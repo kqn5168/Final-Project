@@ -1,0 +1,11 @@
+git
+python-pip 
+python-dev
+protobuf-compiler
+python-tk
+python-pil 
+python-lxml 
+ 
+
+
+
