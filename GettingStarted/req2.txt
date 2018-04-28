@@ -4,4 +4,5 @@ tensorflow
 Cython
 pillow
 lxml
-
+opencv-python
+pywavelets
